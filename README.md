@@ -5,21 +5,21 @@
 
 ## Feature
 
-* Write your experimental procedures like Python functions.
+* Write your experimental procedures as Python classes and functions.
 
-* Up to 20 MHz (50 ns) step resolution for digital and analog outputs.
+* 20 MHz (50 ns) step resolution for digital and analog outputs.
 
-* Low cost, flexible hardware configuration.
+* Low cost, flexible hardware.
 
 * Integrated data acquisition (DAQ) and data analysis.
 
 ## Hardware Requirements
 
-* Analog and digital output boards based on Professor [Florian Schreck](http://www.uva.nl/en/profile/s/c/f.e.schreck/f.e.schreck.html)'s [design](http://www.strontiumbec.com/)
+* Analog and digital output boards based on Professor [Florian Schreck](https://www.uva.nl/en/profile/s/c/f.e.schreck/f.e.schreck.html)'s [design](http://www.strontiumbec.com/)
 
 * [National Instruments](https://www.ni.com/) PCIe-6535B/6536B/6537B 32-Channel digital I/O device
 
-* *(Optional)* [Novatech](https://) 409B or DDS9m direct digital synthesizer (DDS)
+* *(Optional)* [Novatech](http://www.novatechsales.com/) 409B or DDS9m direct digital synthesizer (DDS)
 
 * *(Optional)* [Point Grey](https://www.ptgrey.com/) camera
 
@@ -31,7 +31,7 @@
 
 * [Python 3.x](https://www.python.org/)
 
-* [NumPy](http://www.numpy.org/)
+* [NumPy](https://www.numpy.org/)
 
 * [nidaqmx](https://github.com/ni/nidaqmx-python)
 
@@ -65,7 +65,7 @@ exp.odt()
 exp.evap()
 
 #exp.insitu()
-exp.tof(t=tof_time)
+exp.tof(t=20e-3)
 
 exp.abs_img()
 
